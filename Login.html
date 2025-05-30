@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-panel {
+      flex: 1;
+      background-color: #f0f0f0;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left-panel h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .form-group button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .right-panel {
+      flex: 1;
+      background: url('https://source.unsplash.com/600x800/?login,technology') no-repeat center center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="left-panel">
+    <h2>Login / Register</h2>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+    </div>
+    <div class="form-group">
+      <label for="surname">Surname</label>
+      <input type="text" id="surname" placeholder="Enter your surname">
+    </div>
+    <div class="form-group">
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" placeholder="Enter your mobile number">
+    </div>
+    <div class="form-group">
+      <label for="email">Email ID</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <!-- Right panel content or background image -->
+  </div>
+</body>
+</html>
