@@ -12,83 +12,55 @@
     }
 
     body {
-      display: flex;
       height: 100vh;
-    }
-
-    .left-panel {
-      flex: 1;
-      background-color: #f0f0f0;
-      padding: 40px;
+      background: url('C:\Users\amuly\Downloads\signup.jpg') no-repeat center center;
+      background-size: cover;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
 
-    .left-panel h2 {
+    .signup-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .signup-box h2 {
       margin-bottom: 20px;
-      color: #333;
     }
 
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-
-    .form-group input {
+    input {
       width: 100%;
       padding: 10px;
+      margin-top: 10px;
       border: 1px solid #ccc;
       border-radius: 6px;
+      font-size: 16px;
     }
 
-    .form-group button {
-      margin-top: 10px;
-      padding: 12px;
+    button {
+      margin-top: 15px;
+      padding: 10px;
       width: 100%;
-      background-color: #28a745;
+      background-color: green;
       color: white;
       border: none;
       border-radius: 6px;
       cursor: pointer;
       font-size: 16px;
     }
-
-    .right-panel {
-      flex: 1;
-      background: url('https://source.unsplash.com/600x800/?signup,secure') no-repeat center center;
-      background-size: cover;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        flex-direction: column;
-      }
-      .right-panel {
-        display: none;
-      }
-    }
   </style>
 </head>
 <body>
-  <div class="left-panel">
+
+  <div class="signup-box">
     <h2>Sign Up</h2>
-    <div class="form-group">
-      <label for="mobile">Mobile Number</label>
-      <input type="tel" id="mobile" placeholder="Enter your mobile number">
-    </div>
-    <div class="form-group">
-      <button type="submit">Verify</button>
-    </div>
+    <input type="tel" placeholder="Enter Mobile Number">
+    <button>Verify</button>
   </div>
 
-  <div class="right-panel">
-    <!-- Background image -->
-  </div>
 </body>
 </html>
